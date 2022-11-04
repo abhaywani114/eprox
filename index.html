@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <title>Hello, world!</title>
+      <style>
+         * {
+         font-family: 'Poppins', sans-serif;
+         }
+         :root {
+         --c_color1: #32b5b5;
+         --text-color: #222;
+         -webkit-transition: opacity .3s ease-out;
+         transition: opacity .3s ease-out;
+         }
+         .text-p-color {
+         color: var(--text-color) !important;
+         }
+         .text-h-color {
+         color: var(--c_color1) !important;
+         }
+         .top-bar {
+         background: var(--c_color1);
+         display: flex;
+         justify-content: space-between;
+         }
+         .nav_{
+         box-shadow: 0px -2px 6px 0px var(--c_color1);
+         }
+         .nav_btn {
+         border: 1px solid var(--c_color1);
+         background: var(--c_color1);
+         -webkit-box-shadow: 0 3px 10px 0 rgb(53 49 54 / 28%);
+         box-shadow: 0 3px 10px 0 rgb(53 49 54 / 28%);
+         font-weight:600;
+         }
+         .nav-link {
+         font-weight: 600;
+         }   
+         .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+         color: var(--c_color1);
+         }
+         .navbar-light .navbar-nav .nav-link {
+         color: #222;
+         }
+         .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+         color: var(--c_color1);
+         }
+         .jumbotron {
+         color: white;
+         height: 100vh;
+         position: relative;
+         margin-bottom:0;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+         .bg1 {
+         background-image: url("assets/images/bg1.webp");
+         }
+         .bg2 {
+         background-image: url("assets/images/bg2.webp");
+         }
+         .bg3 {
+         background-image: url("assets/images/bg3.webp");
+         }
+         .layover {
+         position: absolute;
+         top:0;bottom:0;
+         left:0;right:0;
+         background: #00000087;
+         }
+         .data_layoff {
+         position: absolute;
+         left: 0;
+         right: 0;
+         }
+         .hightlight-text {
+         color: var(--c_color1);
+         }
+         @media (min-width: 768px) {
+         .custom-hero-transform {
+         transform: translateY(50%);
+         }
+         }
+         .c_hr {
+         border: 2px solid var(--c_color1);
+         width: 70px;
+         margin-right: auto;
+         float: left;
+         clear: both;
+         }
+         .my-grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-gap: 10%;
+         }
+         .my-grid > div {
+         background: #fff;
+         border-top: 5px solid var(--c_color1);
+         color: #222;
+         padding: 10px 15px;
+         }
+         .parallax {
+         /* Full height */
+         height: 100%; 
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+         @media (max-width: 768px) {
+         .my-grid {
+         grid-template-columns: 1fr;
+         }
+         }
+         .icon_c {
+         background: #32b5b5;
+         width: 100px;
+         height: 100px;
+         border-radius: 100%;
+         margin: auto;
+         margin-top: 30px;
+         }
+         .icon_self {
+         transform: translate(60%, 70%);
+         width: 50px;
+         }
+         .icon_text {
+         font-size: 12px;
+         line-height: 1.6;
+         font-weight: 600;
+         text-align: center;
+         color: #222;
+         }
+      </style>
+   </head>
+   <body >
+      <div class="top-bar px-5 py-1 text-white">
+         <div>
+            <span class="w-text-block " style="display: block;"><span class="w-text-content"><a href="tel:+12345678900" data-action="phone" class="ui-link text-white">+ 1-234-567-8900</a></span></span>
+         </div>
+         <div>
+            F
+         </div>
+      </div>
+      <nav class="nav_ px-md-5 navbar navbar-expand-lg navbar-light bg-white py-3">
+         <a class="navbar-brand" href="#">
+         <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" 
+            class="d-inline-block align-top" alt="">
+         Bootstrap
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mx-auto">
+               <li class="nav-item p-2 active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+               <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+               <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+               <li class="nav-item p-2">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+            </ul>
+            <button class="btn btn-lg mx-4 nav_btn text-white">Book Now</button>
+         </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid bg1">
+         <div class="layover"></div>
+         <div class="container data_layoff">
+            <div class="row">
+               <div class="col-md-7 custom-hero-transform">
+                  <h1 class="display-4 " style="font-weight: 700;"><span class="hightlight-text">TRY OUR</span><br/> CONTACTLESS EPOXY FLOORING SERVICE</h1>
+                  <p>Answer a few questions and instantly get a FREE ONLINE QUOTE. We can also schedule a follow-up video call to answer all your questions and get your project started right away. Click below to get started!</p>
+               </div>
+               <div class="col-md-5 p-relative">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid bg2">
+         <div class="container data_layoff">
+            <div class="row">
+               <div class="col-md-8 mt-md-5 text-black">
+                  <h2 class="text-p-color" style="font-weight: 600;"><span class="hightlight-text">We are Top Rated</span><br/>Epoxy Floor Installers in San Jose, CA</h2>
+                  <hr class="c_hr"/>
+                  <p class="text_1k0 ui-subtitle w-subtitle text-p-color" 
+                     style="clear:both;font-size:16px;line-height:1.6;letter-spacing:0.5px;font-weight:400;">
+                     <span style="display: block;text-align:justify;" class="w-text-block w-text-justify "><span class="text-h-color">●&ensp;</span><span >Our mission is simple: to provide high-quality Epoxy Floor services in a timely manner.</span></span>
+                     <span style="display: block;text-align:justify;" class="w-text-block w-text-justify "><span class="text-h-color">●&ensp;</span><span >Our team caters to each project’s specific needs to ensure excellence.</span></span>
+                     <span style="display: block;text-align:justify;" class="w-text-block w-text-justify "><span class="text-h-color">●&ensp;</span><span >Our contactless, versatile, durable, and hygienic epoxy floor coatings have set a new standard for stunning design options and cost-effective practicality in both new construction, renovation, and remodeling projects. Many businesses are already reaping the benefits of commercial and industrial concrete coatings, while architects, home designers, and contractors are creating amazing showpiece floors for homeowners.</span></span>
+                     <span style="display: block;text-align:justify;" class="w-text-block w-text-justify "><span class="text-h-color">●&ensp;</span><span >At Epoxy Foxy we span all the possibilities for concrete epoxy floor installations, bringing our experience to your commercial, residential, or industrial flooring project.</span></span>
+                  </p>
+               </div>
+               <div class="col-md-5 p-relative">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="parallax bg3" style="position:relative;">
+      <div class="layover"></div>
+      <div class="container pt-5" style="z-index: 1000;position: 
+         sticky;padding-bottom:100px;">
+         <div class="text-center">
+            <h3 class="display-5" 
+               style="font-weight:600;line-height:1.45;color:#fff;"><span 
+               class="hightlight-text ">Advantages of</span><br/> 
+               Professionally Installed Epoxy Floors
+            </h3>
+            <hr class="c_hr" style="float:none;"/>
+            <p class="text-white font-weight-bold">While kits, DIY products, and handy-man installations 
+               might claim to offer the same benefits as professional-grade garage floor epoxy systems, water-based products and single coats of paint or formula do not share these critical benefits of having your floor installed by professionals.
+            </p>
+         </div>
+         <div class="my-grid">
+            <div>
+               <div class="icon_c">
+                  <img src="assets/images/tap_1.png" class="icon_self">
+               </div>
+               <hr class="c_hr" style="float:none;"/>
+               <p class="icon_text">Extreme floor durability which is resistant to pressure, cracking, stains, chemicals, and abrasions</p>
+            </div>
+            <div>
+               <div class="icon_c">
+                  <img src="assets/images/tap_1.png" class="icon_self">
+               </div>
+               <hr class="c_hr" style="float:none;"/>
+               <p class="icon_text">Endless design possibilities including inlays, patterns, colors, logos, and textures</p>
+            </div>
+            <div>
+               <div class="icon_c">
+                  <img src="assets/images/tap_1.png" class="icon_self">
+               </div>
+               <hr class="c_hr" style="float:none;"/>
+               <p class="icon_text">Protection from moisture, road 
+                  salt, petrochemicals, and oil, with easy soap and water 
+                  cleanup
+               </p>
+            </div>
+            <div>
+               <div class="icon_c">
+                  <img src="assets/images/tap_1.png" class="icon_self">
+               </div>
+               <hr class="c_hr" style="float:none;"/>
+               <p class="icon_text">Environmentally friendly—the production of epoxy does not threaten the environment;</p>
+            </div>
+            <div>
+               <div class="icon_c">
+                  <img src="assets/images/tap_1.png" class="icon_self">
+               </div>
+               <hr class="c_hr" style="float:none;"/>
+               <p class="icon_text">Resurfacing damaged, cracked, or stained concrete with a self-leveling smooth finish</p>
+            </div>
+            <div>
+               <div class="icon_c">
+                  <img src="assets/images/tap_1.png" class="icon_self">
+               </div>
+               <hr class="c_hr" style="float:none;"/>
+               <p class="icon_text">Noise-dampening qualities, light-enhancing finishes, and slip-resistant surfaces improve safety</p>
+            </div>
+         </div>
+      </div>
+      <!-- Optional JavaScript; choose one of the two! -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+      <script>
+         $(".jumbotron").css({ height: $(window).height() + "px" });
+         $(window).on("resize", function() {
+         	$(".jumbotron").css({ height: $(window).height() + "px" });
+         });
+           
+      </script>
+   </body>
+</html>
