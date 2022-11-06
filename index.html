@@ -82,11 +82,13 @@
          top:0;bottom:0;
          left:0;right:0;
          background: #00000087;
+         z-index:0;
          }
          .data_layoff {
          position: absolute;
          left: 0;
          right: 0;
+         z-index:1;
          }
          .hightlight-text {
          color: var(--c_color1);
@@ -123,6 +125,13 @@
          background-repeat: no-repeat;
          background-size: cover;
          }
+         .hero_1 {
+            width: auto;
+            height: 70%;
+            position: absolute;
+            right: 10%;
+            bottom:0;
+         }
          @media (max-width: 768px) {
          .my-grid {
          grid-template-columns: 1fr;
@@ -130,6 +139,19 @@
          }
          .my-grid > div {
             margin-top: 40px;
+         }
+         .container.data_layoff {
+            position: relative;
+         }
+         .hero_1 {
+            height: 300px;
+            position: relative;
+            margin: auto;
+            display: block;
+            margin-top: 20px;
+         }
+         #home {
+            padding-bottom: 0;
          }
          }
          .icon_c {
@@ -330,6 +352,7 @@ button:focus {
                </div>
             </div>
          </div>
+         <img src="assets/images/hero_guy.png" class="hero_1"/>
       </div>
       <div class="jumbotron jumbotron-fluid bg2" id="intro">
          <div class="container data_layoff_">
