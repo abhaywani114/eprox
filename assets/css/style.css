@@ -118,6 +118,15 @@
          bottom:0;
          }
          @media (max-width: 768px) {
+        .g_width {
+            width: 95% !important;
+        }
+        .thumb, .img-thumbnail {
+            height: auto;
+            width:80%;
+            margin:auto;
+        }
+
          .my-grid {
          grid-template-columns: 1fr;
          grid-gap: 0%;
@@ -255,6 +264,10 @@
          display: block;
          transition-duration: 0.4s;
          }
+
+        .g_width {
+            width: 60%;
+        }
          @media screen and (max-width: 999px) {
          .next, .prev {
          transform: scale(1);
@@ -263,4 +276,6 @@
          .item {
          display: block !important;
          }
+
+
          }

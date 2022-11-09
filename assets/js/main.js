@@ -15,8 +15,16 @@
          
          
          $(document).ready(function() {
-         
-         $('.owl-carousel').owlCarousel({
+             if( $(window).width() < 999) { 
+                $("#g_row").addClass('owl-carousel');
+                $('#g_row').owlCarousel({
+                    autoWidth:true,
+                     loop:true,
+                    responsive: false,
+                });
+             }
+
+         $('.owl-carousel1').owlCarousel({
          mouseDrag:false,
          loop:true,
          margin:2,

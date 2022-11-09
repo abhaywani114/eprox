@@ -16,7 +16,6 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
       <title>Epoxy Flooring</title>
       <style>
-       
       </style>
    </head>
    <body >
@@ -50,6 +49,10 @@
                </li>
                <li class="nav-item p-2">
                   <a class="nav-link" href="#ourwork">Our Work</a>
+               </li>
+
+               <li class="nav-item p-2">
+                  <a class="nav-link" href="#ourgallery">Our Gallery</a>
                </li>
                <li class="nav-item p-2">
                   <a class="nav-link" href="#contactus">Contact Us</a>
@@ -202,7 +205,7 @@
                <p class="text-white font-weight-bold">Such feedback on our work makes us happy.
                </p>
             </div>
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-carousel1 owl-theme">
                <div class="item first prev">
                   <div class="card border-0 py-3 px-4">
                      <div class="row justify-content-center">
@@ -242,7 +245,7 @@
             </div>
          </div>
       </div>
-      <div class="h-full pb-5" id="ourwork">
+      <div class="h-full pb-5" id="ourgallery">
          <div class="text-center mt-5">
             <h3 class="display-5" 
                style="font-weight:600;line-height:1.45;color:#222;"><span 
@@ -253,10 +256,10 @@
             <p class="font-weight-bold"> 
             </p>
          </div>
-         <div style="width: 60%; margin: auto;">
+         <div style="margin: auto;" class="g_width">
             <div class="container">
                <div class="row">
-                  <div class="row">
+                  <div class="row " id="g_row">
 
                      <div class="col-lg-4 col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
@@ -427,36 +430,36 @@
                   </figure>
                </div>
                <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
-                  <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                  <form action="contact-us.php" class="contact-form form-validate" method="post" novalidate="novalidate">
                      <div class="row">
                         <div class="col-sm-6 mb-3">
                            <div class="form-group">
                               <label class="required-field" for="firstName">First Name</label>
-                              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Wendy">
+                              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Wendy" required>
                            </div>
                         </div>
                         <div class="col-sm-6 mb-3">
                            <div class="form-group">
                               <label for="lastName">Last Name</label>
-                              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Appleseed">
+                              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Appleseed" required>
                            </div>
                         </div>
                         <div class="col-sm-6 mb-3">
                            <div class="form-group">
                               <label class="required-field" for="email">Email</label>
-                              <input type="text" class="form-control" id="email" name="email" placeholder="wendy.apple@seed.com">
+                              <input type="text" class="form-control" id="email" name="email" placeholder="wendy.apple@seed.com" required`>
                            </div>
                         </div>
                         <div class="col-sm-6 mb-3">
                            <div class="form-group">
                               <label for="phone">Phone Number</label>
-                              <input type="tel" class="form-control" id="phone" name="phone" placeholder="(021)-454-545">
+                              <input type="tel" class="form-control" id="phone" name="phone" placeholder="(021)-454-545" required>
                            </div>
                         </div>
                         <div class="col-sm-12 mb-3">
                            <div class="form-group">
                               <label class="required-field" for="message">How can we help?</label>
-                              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Hi there, I would like to....."></textarea>
+                              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Hi there, I would like to....." required></textarea>
                            </div>
                         </div>
                         <div class="col-sm-12 mb-3">
