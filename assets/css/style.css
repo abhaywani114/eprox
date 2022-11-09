@@ -129,6 +129,7 @@
             margin:auto;
         }
 
+        .custom-hero-transform{transform: translateY(35%);}
          .my-grid {
          grid-template-columns: 1fr;
          grid-gap: 0%;
